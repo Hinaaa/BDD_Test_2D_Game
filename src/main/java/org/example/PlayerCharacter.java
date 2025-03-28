@@ -24,14 +24,14 @@ public class PlayerCharacter {
         return positionX;
     }
     public static int moveLeftRight(char direction) {
-        int positionX =0;
+        int positionY =0;
         if(direction=='A' || direction=='a') {
-            positionX=positionX-1;
+            positionY=positionY-1;
         }
         if(direction=='D' || direction=='d') {
-            positionX=positionX+1;
+            positionY=positionY+1;
         }
-        return positionX;
+        return positionY;
     }
 
 
