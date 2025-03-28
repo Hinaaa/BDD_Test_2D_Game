@@ -13,4 +13,26 @@ public class PlayerCharacter {
     public static int getY() {
         return y;
     }
+    public static int moveUpDown(char direction) {
+        int positionX =0;
+        if(direction=='W' || direction=='w') {
+            positionX=positionX-1;
+        }
+        if(direction=='S' || direction=='s') {
+            positionX=positionX+1;
+        }
+        return positionX;
+    }
+    public static int moveLeftRight(char direction) {
+        int positionX =0;
+        if(direction=='A' || direction=='a') {
+            positionX=positionX-1;
+        }
+        if(direction=='D' || direction=='d') {
+            positionX=positionX+1;
+        }
+        return positionX;
+    }
+
+
 }
